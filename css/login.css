@@ -1,0 +1,222 @@
+body{
+    background-color: #f9f9f9;
+    font-family: NotoSans;
+}
+
+.header{
+    background-color: #f9f9f9;
+}
+.content .logo{
+    width: 286px;
+    height: 76px;
+    margin: 0 auto;
+}
+.content .logo img{
+    width: 100%;
+    height: 100%;
+}
+.h_content {
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+.h_content .right .identity{
+    padding: 0 10px;
+    height: 12px;
+    margin-top: 15px;
+    line-height: 12px;
+}
+.h_content .right .identity:not(:first-child){
+    border-left: 1px solid #ccc;
+}
+
+.content{
+    width: auto;
+    height: 800px;
+    margin: 120px auto 0;
+    background: url("../images/newbg.png") no-repeat bottom;
+}
+.content .tit{
+    font-family: NotoSansBold;
+    font-size: 32px;
+    color: #333;
+    text-align: center;
+}
+.content .box{
+    width: 1042px;
+    background-color: #fff;
+    padding: 60px 0;
+    box-sizing: border-box;
+    margin: 45px auto 0;
+    box-shadow: 0 6px 13px 0 rgba(0,0,0,.1);
+    border-radius: 10px;
+}
+.box .login_f{
+    padding: 0 70px 0 60px;
+    box-sizing: border-box;
+    border-right: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.box .login_r{
+    padding: 0 60px 0 70px;
+    box-sizing: border-box;
+}
+
+.box .login_f .ipt_box{
+    width: 500px;
+    height: 55px;
+    border: 1px solid #ddd;
+    padding: 0 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+.box .login_f .ipt_box .ipt{
+    width: 100%;
+    height: 35px;
+    line-height: 105px;
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.box .login_in{
+    width: 430px;
+    height: 50px;
+    background: linear-gradient(left, #ff8400, #ff6600);
+    background: -webkit-linear-gradient(left, #ff8400, #ff6600);
+    background: -ms-linear-gradient(left, #ff8400, #ff6600);
+    background: -moz-linear-gradient(left, #ff8400, #ff6600);
+    border-radius: 5px;
+    margin: 50px auto 20px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 50px;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+}
+
+.box .forgot{
+    width: 430px;
+    margin: 0 auto;
+    font-size: 12px;
+    color: #999;
+    text-align: center;
+    line-height: 20px;
+}
+.forgot>div{
+    cursor: pointer;
+}
+.forgot .icon{
+    width: 16px;
+    height: 16px;
+    border: 1px solid #ccc;
+    margin: 1px 6px 0 0;
+    line-height: 16px;
+    box-sizing: border-box;
+}
+.forgot .icon .iconfont{
+    color: #fff;
+    font-size: 22px;
+    position: relative;
+    left: -4px;
+}
+.forgot .active .icon{
+    background-color: #ff6b12;
+    border-color: #ff6b12;
+}
+
+.box .list{
+    width: 280px;
+    height: 50px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 50px;
+}
+
+.box .list_one{
+    background-color: #3c599b;
+}
+.box .list_two{
+    background-color: #dd4b39;
+}
+.box .list_three{
+    background-color: #107ab6;
+}
+.box .list_fore{
+    background-color: #82d743;
+}
+.box .list_five{
+    background-color: #269afc;
+}
+.box .login_r .left{
+    width: 70px;
+    height: 50px;
+}
+
+.box .list .left{
+    text-align: center;
+}
+.box .list .left .iconfont{
+    font-size: 30px;
+}
+.sign_up{
+    margin: 40px auto 0;
+    text-align: center;
+    font-size: 16px;
+    color: #999;
+}
+.sign_up a{
+    color: #ff6b12;
+    display: inline;
+}
+
+
+/*注册页style*/
+.box .no_border{
+    border: none;
+}
+.box .ipt_box_r{
+    width: 230px;
+    height: 55px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+}
+.box .ipt_box_r .ipt{
+    height: 35px;
+    width: 98%;
+    margin-top: 10px;
+    padding: 0 20px;
+    font-size: 16px;
+    color: #333;
+    box-sizing: border-box;
+}
+.box .btn{
+    width: 260px;
+    height: 55px;
+    background-color: #f1f1f1;
+    margin-left: 10px;
+    font-size: 16px;
+    text-align: center;
+    line-height: 55px;
+    padding: 0 10px;
+    box-sizing: border-box;
+    /*需要调整*/
+    box-shadow: 4px 4px 6px #ddd;
+    cursor: pointer;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.text{
+    width: 280px;
+    font-size: 16px;
+    margin-top: 50px;
+    word-break: break-all;
+}
+.text .color{
+    color: #ff6b12;
+    display: inline;
+}
+.
+

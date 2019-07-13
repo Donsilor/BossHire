@@ -1,0 +1,505 @@
+.search{
+	position: relative;
+	width: 1200px;
+	height: 56px;
+	background-color: #fff;
+	margin: 120px auto 0;
+}
+.search .left{
+	width: 1044px;
+	height: 46px;
+	border: 1px solid #ff6b12;
+	box-sizing: border-box;
+	font-family: NotoSans;
+}
+.search .left .ipt{
+	width: 550px;
+}
+.search .left .type{
+	height: 44px;
+	box-sizing: border-box;
+	text-align: center;
+	line-height: 44px;
+	font-size: 15px;
+	color: #a5a5a5;
+	margin-right: 20px;
+	overflow: hidden;
+	cursor: pointer;
+}
+.search .left .type .text{
+	max-width: 160px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.search .left .type .iconfont{
+	margin-left: 4px;
+	font-size: 16px;
+	color: #a5a5a5;
+}
+.search .left .type.active .text{
+	color: #f60;
+}
+.search .left .type.active .iconfont{
+	color: #f60;
+}
+
+/*查找弹窗选项*/
+.search_pop_two{
+	position: absolute;
+	top: 80px;
+	left: 0;
+	z-index: 6;
+	width: 1044px;
+	background-color: #fff;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	box-shadow: 0 0 6px #ddd, 0 0 8px #f8f8f8;
+	display: none;
+}
+.search_pop_two .list{
+	width: 32%;
+	height: 30px;
+	line-height: 30px;
+	padding: 0 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.search_pop_two .list.active{
+	background-color: #fff3dc;
+	color: #f60;
+}
+.search_pop_two .list:not(:nth-child(3n)){
+	margin-right: 2%;
+}
+/*查找弹窗二*/
+.search_pop_one{
+	position: absolute;
+	top: 80px;
+	left: 0;
+	z-index: 6;
+	/*width: 1045px;*/
+	background-color: #fff;
+	padding: 10px 20px;
+	box-sizing: border-box;
+	box-shadow: 0 0 6px #ddd, 0 0 8px #f8f8f8;
+	display: none;
+}
+.search_pop_one .pop_three{
+	display: none;
+}
+.search_pop_one .row{
+	/*width: 33.33%;*/
+	width: 335px;
+	height: 440px;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+.search_pop_one .row .list{
+	height: 40px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	line-height: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.search_pop_one .row .list.active{
+	background-color: #fff3dc;
+	color: #f60;
+}
+
+/*筛选*/
+.fillter_box{
+	width: 1200px;
+	margin: 0 auto;
+	border-bottom: 1px solid #ddd;
+}
+.fillter{
+	max-width: 1100px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.fillter .city{
+	height: 74px;
+	line-height: 74px;
+	font-family: NotoSansBold;
+	font-size: 14px;
+	color: #333;
+
+}
+.fillter .fillter_r{
+	height: 40px;
+	overflow: hidden;
+	max-width: 1000px;
+	padding-top: 18px;
+}
+.fillter .fillter_list{
+	height: 40px;
+	line-height: 40px;
+	font-family: ArialMTBold;
+	font-size: 13px;
+	color: #525252;
+	box-sizing: border-box;
+	cursor: pointer;
+	margin-left: 20px;
+
+}
+.fillter_box .more{
+	width: 60px;
+	height: 74px;
+	line-height: 74px;
+	font-size: 14px;
+	color: #999;
+	cursor: pointer;
+}
+.fillter_box .more.active{
+	color: #f60;
+}
+.fillter .fillter_list.active{
+	color: #f60;
+}
+
+.select{
+	width: 1200px;
+	height: 74px;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+}
+.select .list{
+	position: relative;
+	height: 74px;
+	line-height: 74px;
+	font-family: NotoSans;
+	font-size: 14px;
+	color: #333;
+	cursor: pointer;
+}
+.select .list:not(:last-child){
+	 margin-right: 50px;
+}
+.select .list:nth-child(5){
+	margin-right: 20px;
+}
+.select .list.active{
+	color: #f60;
+}
+.select .list .name{
+	max-width: 116px;
+	overflow: hidden;
+	white-space: nowrap;
+}
+.select .list .icon{
+	width: 10px;
+	height: 10px;
+	margin: 32px 4px;
+	text-align: center;
+	line-height: 10px;
+}
+.select .active .iconquxiao{
+	color: #f60;
+}
+.select .clear{
+	color: #999;
+}
+.select .list .icontriangle-bottom{
+	font-size: 14px;
+	color: #999;
+}
+
+.select .list .fillter_pop{
+	position: absolute;
+	left: 0;
+	top: 74px;
+	min-width: 70px;
+	max-width: 204px;
+	max-height: 400px;
+	background-color: #fff;
+	overflow-y: auto;
+	display: none;
+	box-shadow: 0 0 6px #ddd, 0 0 8px #f8f8f8;
+}
+.select .list .fillter_pop .list_r{
+	height: 40px;
+	font-size: 15px;
+	color: #333;
+	line-height: 40px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.select .list .fillter_pop .list_r:hover {
+	background-color: #eee;
+}
+
+.box_bg{
+	width: 100%;
+	background-color: #f9f9f9;
+	padding: 10px 0 30px;
+	min-height: 800px;
+	/*margin-bottom: 30px;*/
+}
+
+.content .referred{
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+	padding: 0 20px;
+	box-sizing: border-box;
+	font-family: NotoSans;
+	font-size: 14px;
+	color: #333;
+}
+.content .referred .total{
+	max-width: 500px;
+	height: 50px;
+	line-height: 50px;
+}
+.content .referred .fl .color{
+	font-family: NotoSansBold;
+	color: #f00;
+	margin: 0 10px;
+}
+.content .referred .condition{
+	max-width: 500px;
+	height: 50px;
+	line-height: 50px;
+}
+.content .referred .selectCV{
+	width: 142px;
+	height: 30px;
+	background-color: #ff6b12;
+	border-radius: 6px;
+	font-size: 14px;
+	color: #fff;
+	text-align: center;
+	line-height: 30px;
+	margin: 10px 0 10px 30px;
+}
+.content .condition .urgent{
+	margin-left: 30px;
+}
+.content .condition .icon{
+	width: 16px;
+	height: 16px;
+	border: 1px solid #ccc;
+	margin: 17px 10px 17px 0;
+	text-align: center;
+	line-height: 16px;
+	box-sizing: border-box;
+}
+.content .condition .urgent.active .icon,
+.content .list.active .icon{
+	background-color: #ff6b12;
+	border-color: #ff6b12;
+}
+.content .urgent i,
+.content .list i{
+	position: relative;
+	left: -4px;
+	font-size: 22px;
+	color: #fff;
+
+}
+.content .referred .smart{
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	color: #ff6b12;
+	margin-left: 30px;
+	cursor: pointer;
+	padding-left: 10px;
+	box-sizing: border-box;
+}
+.content .smart .text{
+	width: 100px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	text-align: right;
+	padding-right: 10px;
+}
+.content .referred .smart_r{
+	border: 1px solid #ccc;
+	position: absolute;
+	width: 130px;
+	background-color: #fff;
+	border-radius: 5px;
+	top: 50px;
+	left: -1px;
+	display: none;
+}
+.content .smart_r.active{
+	display: block;
+}
+.content .smart_list{
+	height: 40px;
+	line-height: 40px;
+	color: #333;
+	padding: 0 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.content .smart_list:hover{
+	background-color: #fff3dc;
+	color: #f60;
+}
+
+.content .smart_list.active{
+	background-color: #fff3dc;
+	color: #f60;
+}
+
+
+.talent{
+	width: 100%;
+	background-color: #fff;
+	margin-top: 10px;
+	padding: 0 20px;
+	box-sizing: border-box;
+}
+.talent .talent_list{
+	width: 100%;
+	/*height: 146px;*/
+	box-sizing: border-box;
+}
+.talent .talent_list .icon{
+	width: 16px;
+	height: 16px;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	margin-top: 40px;
+	text-align: center;
+	line-height: 14px;
+}
+.talent .talent_list .icon i{
+	position: relative;
+	left: -4px;
+	color: #fff;
+	font-size: 22px;
+}
+.talent .talent_list.active .icon{
+	background-color: #ff6b12;
+	border-color: #ff6b12;
+}
+.talent .line{
+	width: 1124px;
+	height: 100%;
+	padding: 20px 0;
+	box-sizing: border-box;
+	margin-left: 20px;
+	border-bottom: 1px solid #ddd;
+}
+.talent .line .img_box{
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+}
+.talent .line .img_box img{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+}
+.talent .line .info{
+	width: 1012px;
+	height: 100%;
+	margin-left: 26px;
+}
+.talent .line .info .user{
+	font-family: NotoSans;
+	font-size: 14px;
+	color: #333;
+	/*margin-top: 6px;*/
+}
+.talent .line .info .user .name{
+	max-width: 180px;
+	overflow: hidden;
+	font-weight: bold;
+}
+.talent .line .info .user .name a{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.talent .line .info .user_b{
+	margin-left: 60px;
+}
+.talent .user_b .user_info{
+	display: inline-block;
+	padding: 0 14px 0 12px;
+	font-size: 14px;
+	height: 20px;
+	line-height: 20px;
+	margin-top: 4px;
+}
+.talent .user_b .user_info:not(:last-child){
+	border-right: 1px solid #999;
+}
+.talent .user_b .sex{
+	max-width: 80px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.talent .user_b .old{
+	max-width: 120px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.talent .user_b .experience{
+	max-width: 260px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.talent .user_b .education{
+	max-width: 150px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.talent .job_info{
+	font-family: NotoSans;
+	font-size: 12px;
+	color: #666;
+	margin-top: 15px;
+}
+.talent .job_info .post{
+	max-width: 400px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.talent .job_info .location{
+	max-width: 300px;
+	margin-left: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.talent .job_info .data{
+	max-width: 250px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	color: #999;
+}
+
+.select .list .fillter_pop .list_r.active{
+	background-color: #fff3dc;
+	color: #f60;
+}
+
+
+
+/*分页样式*/
+.paging{ height:35px;line-height: 35px;padding: 30px 0 50px 0; text-align: center; background-color: #fff;margin-bottom: 30px}
+

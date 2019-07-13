@@ -1,0 +1,1909 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="../css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/index.css"/>
+		<link rel="stylesheet" type="text/css" href="../common/swiper/swiper.css"/>
+		<script src="../common/swiper/swiper.min.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="header">
+			<div class="h_content">
+				<div class="fl logo fl">
+					<img src="../images/logo_02@2x.png" alt="">
+				</div>
+				<ul class="fl tab">
+					<li class="tab_list">
+						Beranda
+						<span class="line"></span>
+					</li>
+					<li class="tab_list">
+						<a href="SearchJobs.html">Cari Pekerjaan</a>
+					</li>
+					<li class="tab_list">
+						<a href="TalentSearch.html">Cari Kandidat</a>
+					</li>
+					<li class="tab_list">
+						<a href="CampusHiring.html">Campus Hiring</a>
+					</li>
+					<li class="tab_list">
+						<a href="JobFair.html">Bursa Kerja</a>
+					</li>
+				</ul>
+				<div class="fr right clf">
+					<div class="drop_down fl drop_one">
+						<div class="language">
+							<span class="txt">English</span><i class="iconfont iconicon_on_the_down"></i>
+						</div>
+						<div class="language_r">
+							<div class="txt">English</div>
+							<div class="txt">Chinese</div>
+							<div class="txt">Indonesia</div>
+						</div>
+					</div>
+
+					<div class="sign_up fl">
+						<a href="./注册.html">Sign Up</a>
+					</div>
+
+					<div class="login fl">
+						<a href="./登录.html">Login In</a>
+					</div>
+
+					<div class="drop_down fl drop_two" style="display: none">
+						<div class="language">
+							<span class="txt">18617175236</span><i class="iconfont iconicon_on_the_down"></i>
+						</div>
+						<div class="personal">
+							<a href="" class="txt">账户中心</a>
+							<a href="" class="txt">
+							<span class="icon">
+								<i class="iconfont iconjianli1"></i>
+							</span>我的简历
+							</a>
+							<a href="" class="txt">
+							<span class="icon">
+								<i class="iconfont iconpinglun"></i>
+							</span>面试通知</a>
+							<a href="" class="txt">申请的职位</a>
+							<a href="" class="txt">
+							<span class="icon">
+								<i class="iconfont iconxingxing_xuanzhong"></i>
+							</span>职位收藏夹
+							</a>
+							<a href="" class="txt">
+							<span class="icon">
+								<i class="iconfont iconshezhi"></i>
+							</span>账号设置
+							</a>
+							<a href="" class="txt">安全退出</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--轮播图-->
+		<div class="banner">
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide">
+						<img src="../images/adult.jpg" >
+					</div>
+					<div class="swiper-slide">
+						<img src="../images/timg_2.jpg" >
+					</div>
+					<div class="swiper-slide">
+						<img src="../images/timg.jpg" >
+					</div>
+				</div>
+		
+				<div class="swiper-pagination"></div>
+				
+				<div class="swiper-scrollbar"></div>
+			</div>			
+		</div>
+		
+		<script type="text/javascript">
+			var swiper = new Swiper('.swiper-container',{
+			 	loop: true,
+			 	pagination: {
+			 		el:'.swiper-pagination',
+			 		clickable: true,
+			 	},
+		    	autoplay: {
+		    		delay: 1500,//5秒切换一次
+		  		},
+			})
+		</script>
+		
+		<div class="content">
+
+			<!--搜索-->
+			<div class="search_box clf">
+				<div class="search fl clf">
+					<div class="left fl">
+						<div class="fl icon">
+							<i class="iconfont iconsuosou"></i>
+						</div>
+						<input type="text" class="fl ipt" value="" placeholder="Search Jobs By Title or Keywords..."/>
+					</div>
+					<div class="btn fl">Search</div>
+				</div>
+				<div class="jobs_bg fr clf">
+					<div class="jobs_num">
+						<div class="fl left">New jobs this week</div>
+						<ul class="fl num clf">
+							<li class="number">1</li>
+							<li class="number">8</li>
+							<li class="number">2</li>
+							<li class="number">1</li>
+							<li class="number">5</li>
+							<li class="number">3</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<!--筛选条件-->
+			<ul class="fillter clf">
+				<li class="fillter_list fl">Sales</li>
+				<li class="fillter_list fl">Engineer</li>
+				<li class="fillter_list fl">Marketing</li>
+				<li class="fillter_list fl">Finance</li>
+				<li class="fillter_list fl">Information Technology</li>
+				<li class="fillter_list fl">Marketin</li>
+				<li class="fillter_list fl">Finance</li>
+			</ul>
+
+			<div class="jobs_type clf">
+				<ul class="ul fl clf">
+					<li class="type_i fl on">Rewarded Position</li>
+					<li class="type_i fl"> Top Salary Jobs</li>
+					<li class="type_i fl">Fresh Grads Jobs</li>
+				</ul>
+
+				<div class="fr more">
+					<span class="fl">More</span>
+					<i class="iconfont iconyou"></i>
+				</div>
+			</div>
+
+			<!--工作展示-->
+			<div class="box_three">
+				<!--选项一，Rewarded Position,默认显示-->
+				<div class="job_box clf">
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+						<div class="award_wrap">
+							<div class="award">
+								<div class="icon">
+									<i class="iconfont iconhuizhang"></i>
+								</div>
+								<span class="fl">Cash Award</span>
+								<span class="fl idr">IDR 50,000</span>
+							</div>
+							<div class="triangle"></div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+						<div class="award_wrap">
+							<div class="award">
+								<div class="icon">
+									<i class="iconfont iconhuizhang"></i>
+								</div>
+								<span class="fl">Cash Award</span>
+								<span class="fl idr">IDR 50,000</span>
+							</div>
+							<div class="triangle"></div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+						<div class="award_wrap">
+							<div class="award">
+								<div class="icon">
+									<i class="iconfont iconhuizhang"></i>
+								</div>
+								<span class="fl">Cash Award</span>
+								<span class="fl idr">IDR 50,000</span>
+							</div>
+							<div class="triangle"></div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+						<div class="award_wrap">
+							<div class="award">
+								<div class="icon">
+									<i class="iconfont iconhuizhang"></i>
+								</div>
+								<span class="fl">Cash Award</span>
+								<span class="fl idr">IDR 50,000</span>
+							</div>
+							<div class="triangle"></div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+						<div class="award_wrap">
+							<div class="award">
+								<div class="icon">
+									<i class="iconfont iconhuizhang"></i>
+								</div>
+								<span class="fl">Cash Award</span>
+								<span class="fl idr">IDR 50,000</span>
+							</div>
+							<div class="triangle"></div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+						<div class="award_wrap">
+							<div class="award">
+								<div class="icon">
+									<i class="iconfont iconhuizhang"></i>
+								</div>
+								<span class="fl">Cash Award</span>
+								<span class="fl idr">IDR 50,000</span>
+							</div>
+							<div class="triangle"></div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+						<div class="award_wrap">
+							<div class="award">
+								<div class="icon">
+									<i class="iconfont iconhuizhang"></i>
+								</div>
+								<span class="fl">Cash Award</span>
+								<span class="fl idr">IDR 50,000</span>
+							</div>
+							<div class="triangle"></div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl" class="overfl">
+								<a href="">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+						<div class="award_wrap">
+							<div class="award">
+								<div class="icon">
+									<i class="iconfont iconhuizhang"></i>
+								</div>
+								<span class="fl">Cash Award</span>
+								<span class="fl idr">IDR 50,000</span>
+							</div>
+							<div class="triangle"></div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+						<div class="award_wrap">
+							<div class="award">
+								<div class="icon">
+									<i class="iconfont iconhuizhang"></i>
+								</div>
+								<span class="fl">Cash Award</span>
+								<span class="fl idr">IDR 50,000</span>
+							</div>
+							<div class="triangle"></div>
+						</div>
+					</div>
+				</div>
+
+				<!--选项二，Top Salary Jobs-->
+				<div class="job_box clf job_box_two">
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+				</div>
+
+				<!--选项三，Fresh Grads Jobs-->
+				<div class="job_box clf job_box_three">
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">20K-21K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">	Director of Sales</a>
+							</div>
+							<div class="fr price overfl">20K-21K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+
+					<div class="job_list fl">
+						<div class="post_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Director of Sales</a>
+							</div>
+							<div class="fr price overfl">10K-20K</div>
+						</div>
+						<div class="company_name clf">
+							<div class="fl">
+								<a href="" class="overfl">Company Name</a>
+							</div>
+							<div class="fr address overfl">ShenZhen</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!--工作分类，Job Classification-->
+			<div class="classify_box clf">
+				<div class="fl left">
+					<div class="title clf">
+						<div class="tit fl">
+							<span class="line fl"></span>Job Classification
+						</div>
+					</div>
+					<div class="classify">
+						<div class="classify_list">
+							<span>Sales/Customer Service/Market/PR</span>
+						</div>
+						<div class="classify_list">
+							<span>HR/Admin/Finance/Management</span>
+						</div>
+						<div class="classify_list">
+							<span>Manufacturing/Workers/Quality Control</span>
+						</div>
+						<div class="classify_list">
+							<span>Internet/Games/Software</span>
+						</div>
+						<div class="classify_list">
+							<span>Communications/Hardware/Electronics</span>
+						</div>
+						<div class="classify_list">
+							<span>Automotive/Machinery</span>
+						</div>
+						<div class="classify_list">
+							<span>Real Estate/Construction,Building Management/Decoration</span>
+						</div>
+						<div class="classify_list">
+							<span>Finance/Banking/Insurance</span>
+						</div>
+						<div class="classify_list">
+							<span>Advertising/Design/Media</span>
+						</div>
+						<div class="classify_list">
+							<span>Catering/Department Stores/Lifestyle</span>
+						</div>
+						<div class="classify_list">
+							<span>Medical Treatments</span>
+						</div>
+						<div class="classify_list">
+							<span>Education/Training/Specializations</span>
+						</div>
+						<div class="classify_list">
+							<span>Energy/Chemistry/Clothing,Environmentalist</span>
+						</div>
+						<div class="classify_list">
+							<span>Export & Import/Purchasing/Logistics/Driver</span>
+						</div>
+						<div class="classify_list">
+							<span>Agriculture/Forestry/AnimalHusbandry/Fisheries/Others</span>
+						</div>
+					</div>
+				</div>
+
+				<div class="fr right">
+					<div class="clf">
+						<div class="tit fl">
+							<span class="line fl"></span>Enterprise Recommend
+						</div>
+						<div class="fr more">More
+							<i class="iconfont iconyou fr"></i>
+						</div>
+					</div>
+					<div class="merchant clf">
+						<!-- 厂家商标，Top Companies/Hot Jobs，默认显示,选中类别时隐藏 -->
+						<div class="isShow">
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_01.gif">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_01.gif">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_01.gif">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_01.gif">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_01.gif">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_02.gif">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_03.gif">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_04.gif">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_05.gif">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_06.gif">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_07.gif">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_08.gif">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_09.gif">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_10.gif">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_11.gif">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+
+							<div class="merchant_list fl">
+								<div class="logo">
+									<img src="../images/home_page_12.png">
+								</div>
+								<div class="text">Sales Representative</div>
+								<div class="text">Director of Human Resources</div>
+							</div>
+						</div>
+
+						<!-- 具体工作种类，选中类别时显示 -->
+						<div class="isNone">
+							<div class="tit_r">士大夫</div>
+							<div class="list">
+								<a class="list_r">行业特点</a>
+								<a class="list_r">行业特点</a>
+								<a class="list_r">行业特点</a>
+								<a class="list_r">行业特点</a>
+								<a class="list_r">行业特点</a>
+								<a class="list_r">行业特点</a>
+								<a class="list_r">行业特点</a>
+								<a class="list_r">行业特点</a>
+								<a class="list_r">行业特点</a>
+								<a class="list_r">行业特点</a>
+
+							</div>
+							<div class="tit_r">士大夫</div>
+							<div class="list clf">
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+							</div>
+							<div class="tit_r">士大夫</div>
+							<div class="list clf">
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+							</div>
+							<div class="tit_r">士大夫</div>
+							<div class="list clf">
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业fhgjhnfg特点</a>
+								<a class="list_r fl">行业特点行业特点行业特点行业特点行业特点行业特点行业特点</a>
+								<a class="list_r fl">行业ytujhy特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业ygj特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+							</div>
+							<div class="tit_r">士大夫</div>
+							<div class="list clf">
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+							</div>
+							<div class="tit_r">士大夫</div>
+							<div class="list clf">
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+							</div>
+							<div class="tit_r">士大夫</div>
+							<div class="list clf">
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+							</div>
+							<div class="tit_r">士大夫</div>
+							<div class="list clf">
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+								<a class="list_r fl">行业特点</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--所有工作-->
+			<div class="all_jobs">
+				<div class="title clf">
+					<div class="tit fl">
+						<span class="line fl"></span>All Positions
+					</div>
+					<div class="tit fl margin">
+						<span class="line fl"></span>Hot Jobs
+					</div>
+					<div class="fr more">
+						<span class="fl">More</span>
+						<i class="iconfont iconyou"></i>
+					</div>
+				</div>
+
+				<div class="box clf">
+					<div class="fl left">
+						<div class="tit">Advertising/Design/Media</div>
+						<div class="all_classify clf">
+							<div class="classify_list fl">Advertising Director</div>
+							<div class="classify_list fl">Web Design </div>
+							<div class="classify_list fl">Account Executive</div>
+							<div class="classify_list fl">Creative Director</div>
+							<div class="classify_list fl">Creative</div>
+							<div class="classify_list fl">Designer</div>
+							<div class="classify_list fl">Copywriter</div>
+							<div class="classify_list fl">Ad Media Specialist</div>
+							<div class="classify_list fl">Conference</div>
+							<div class="classify_list fl">Exhibition Organizer</div>
+							<div class="classify_list fl">Web Design </div>
+							<div class="classify_list fl">Others (Writing/Publishing/Printing)</div>
+							<div class="classify_list fl">Post-production </div>
+							<div class="classify_list fl">Program Planner</div>
+						</div>
+					</div>
+					<div class="fr right clf">
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_22.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_21.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_24.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_23.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_26.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_25.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="box clf">
+					<div class="fl left">
+						<div class="tit">Advertising/Design/Media</div>
+						<div class="all_classify clf">
+							<div class="classify_list fl">Advertising Director</div>
+							<div class="classify_list fl">Web Design </div>
+							<div class="classify_list fl">Account Executive</div>
+							<div class="classify_list fl">Creative Director</div>
+							<div class="classify_list fl">Creative</div>
+							<div class="classify_list fl">Designer</div>
+							<div class="classify_list fl">Copywriter</div>
+							<div class="classify_list fl">Ad Media Specialist</div>
+							<div class="classify_list fl">Conference</div>
+							<div class="classify_list fl">Exhibition Organizer</div>
+							<div class="classify_list fl">Web Design </div>
+							<div class="classify_list fl">Others (Writing/Publishing/Printing)</div>
+							<div class="classify_list fl">Post-production </div>
+							<div class="classify_list fl">Program Planner</div>
+						</div>
+					</div>
+					<div class="fr right clf">
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_22.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_21.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_24.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_23.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_26.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_25.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="box clf">
+					<div class="fl left">
+						<div class="tit">Advertising/Design/Media</div>
+						<div class="all_classify clf">
+							<div class="classify_list fl">Advertising Director</div>
+							<div class="classify_list fl">Web Design </div>
+							<div class="classify_list fl">Account Executive</div>
+							<div class="classify_list fl">Creative Director</div>
+							<div class="classify_list fl">Creative</div>
+							<div class="classify_list fl">Designer</div>
+							<div class="classify_list fl">Copywriter</div>
+							<div class="classify_list fl">Ad Media Specialist</div>
+							<div class="classify_list fl">Conference</div>
+							<div class="classify_list fl">Exhibition Organizer</div>
+							<div class="classify_list fl">Web Design </div>
+							<div class="classify_list fl">Others (Writing/Publishing/Printing)</div>
+							<div class="classify_list fl">Post-production </div>
+							<div class="classify_list fl">Program Planner</div>
+						</div>
+					</div>
+					<div class="fr right clf">
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_22.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_21.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_24.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_23.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_26.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_25.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="box clf">
+					<div class="fl left">
+						<div class="tit">Advertising/Design/Media</div>
+						<div class="all_classify clf">
+							<div class="classify_list fl">Advertising Director</div>
+							<div class="classify_list fl">Web Design </div>
+							<div class="classify_list fl">Account Executive</div>
+							<div class="classify_list fl">Creative Director</div>
+							<div class="classify_list fl">Creative</div>
+							<div class="classify_list fl">Designer</div>
+							<div class="classify_list fl">Copywriter</div>
+							<div class="classify_list fl">Ad Media Specialist</div>
+							<div class="classify_list fl">Conference</div>
+							<div class="classify_list fl">Exhibition Organizer</div>
+							<div class="classify_list fl">Web Design </div>
+							<div class="classify_list fl">Others (Writing/Publishing/Printing)</div>
+							<div class="classify_list fl">Post-production </div>
+							<div class="classify_list fl">Program Planner</div>
+						</div>
+					</div>
+					<div class="fr right clf">
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_22.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_21.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_24.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_23.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_26.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_25.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="box clf">
+					<div class="fl left">
+						<div class="tit">Advertising/Design/Media</div>
+						<div class="all_classify clf">
+							<div class="classify_list fl">Advertising Director</div>
+							<div class="classify_list fl">Web Design </div>
+							<div class="classify_list fl">Account Executive</div>
+							<div class="classify_list fl">Creative Director</div>
+							<div class="classify_list fl">Creative</div>
+							<div class="classify_list fl">Designer</div>
+							<div class="classify_list fl">Copywriter</div>
+							<div class="classify_list fl">Ad Media Specialist</div>
+							<div class="classify_list fl">Conference</div>
+							<div class="classify_list fl">Exhibition Organizer</div>
+							<div class="classify_list fl">Web Design </div>
+							<div class="classify_list fl">Others (Writing/Publishing/Printing)</div>
+							<div class="classify_list fl">Post-production </div>
+							<div class="classify_list fl">Program Planner</div>
+						</div>
+					</div>
+					<div class="fr right clf">
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_22.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_21.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_24.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_23.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_26.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+						<div class="list_r fl">
+							<div class="img_box fl">
+								<img src="../images/home_page_25.png" >
+							</div>
+							<div class="detail fl">
+								<div class="post clf">
+									<div class="fl post_r">
+										<a href="">Graphic Designer</a>
+									</div>
+									<div class="fr color">10K-20K</div>
+								</div>
+								<div class="company_name">
+									<a href="">Company Name</a>
+								</div>
+								<div class="clf specific">
+									<span class="fl">ShenZhen</span>
+									<span class="fl mid">1-3years</span>
+									<span class="fl">Full-time</span>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+	
+	
+		<div class="footer">
+			<ul class="f_content clf">
+				<li class="f_list">
+					<ol>
+						<li class="row f_tit">Search Jobs</li>
+						<li class="row">
+							<a href="">
+								<span class="fl icon">
+									<i class="iconfont iconjiantou_xiangyouliangci"></i>
+								</span>Complete CV
+							</a>
+						</li>
+						<li class="row">
+							<a href="">
+								<span class="fl icon">
+									<i class="iconfont iconjiantou_xiangyouliangci"></i>
+								</span>Search Jobs
+							</a>
+						</li>
+						<li class="row">
+							<a href="">
+								<span class="fl icon">
+									<i class="iconfont iconjiantou_xiangyouliangci"></i>
+								</span>Privacy Policy
+							</a>
+						</li>
+					</ol>
+				</li>
+
+				<li class="f_list">
+					<ol>
+						<li class="row f_tit">Search Talents</li>
+						<li class="row">
+							<a href="">
+								<span class="fl icon">
+									<i class="iconfont iconjiantou_xiangyouliangci"></i>
+								</span>Recruiter Sign Up
+							</a>
+						</li>
+						<li class="row">
+							<a href="">
+								<span class="fl icon">
+									<i class="iconfont iconjiantou_xiangyouliangci"></i>
+								</span>Talent Search
+							</a>
+						</li>
+						<li class="row">
+							<a href="">
+								<span class="fl icon">
+									<i class="iconfont iconjiantou_xiangyouliangci"></i>
+								</span>Payment Standard
+							</a>
+						</li>
+					</ol>
+				</li>
+
+				<li class="f_list">
+					<ol>
+						<li class="row f_tit">About BOOSHIRE</li>
+						<li class="row">
+							<a href="">
+								<span class="fl icon">
+									<i class="iconfont iconjiantou_xiangyouliangci"></i>
+								</span>The Company
+							</a>
+						</li>
+						<li class="row">
+							<a href="">
+								<span class="fl icon">
+									<i class="iconfont iconjiantou_xiangyouliangci"></i>
+								</span>Terms Of Use
+							</a>
+						</li>
+						<li class="row">
+							<a href="">
+								<span class="fl icon">
+									<i class="iconfont iconjiantou_xiangyouliangci"></i>
+								</span>Contact Us
+							</a>
+						</li>
+						<li class="row">
+							<a href="">
+								<span class="fl icon">
+									<i class="iconfont iconjiantou_xiangyouliangci"></i>
+								</span>Help
+							</a>
+						</li>
+					</ol>
+				</li>
+
+				<li class="f_list">
+					<ol>
+						<li class="row f_tit">Mobile & Social Media</li>
+						<li class="row mobile">
+							<a href="">
+								<span class="fl">
+									<i class="iconfont iconfont iconshouji"></i>
+								</span>Mobile Ver.
+							</a>
+						</li>
+						<li class="row clf i_box">
+							<span class="fl icon_r weixin"></span>
+							<span class="fl icon_r ff"></span>
+							<span class="fl icon_r xiangji"></span>
+							<span class="fl icon_r in"></span>
+						</li>
+					</ol>
+				</li>
+				<li class="f_list">
+					<ol>
+						<li class="row f_tit">Contact Info</li>
+						<li class="contact tel clf">
+							<div class="fl left icon"></div>
+							<div class="fl right">
+								<div class="name">Hot line</div>
+								<div class="num">+62(21)50515047</div>
+							</div>
+						</li>
+						<li class="contact phone clf">
+							<div class="fl left icon"></div>
+							<div class="fl right">
+								<div class="name">WhatsApp(24*7)</div>
+								<div class="num">081295399858</div>
+							</div>
+						</li>
+					</ol>
+				</li>
+			</ul>
+		</div>
+	
+	
+		<script src="../common/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/index.js" type="text/javascript" charset="utf-8"></script>
+	</body> 
+</html>

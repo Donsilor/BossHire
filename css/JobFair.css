@@ -1,0 +1,196 @@
+.banner{
+	position: relative;
+	width: 100%;
+	/*width: 1920px;*/
+	min-width: 1180px;
+	height: 500px;
+	box-sizing: border-box;
+	margin-top: 80px;
+	overflow: hidden;
+}
+.banner img{
+	position: absolute;
+	left: 50%;
+	top: 0;
+	transform: translateX(-50%);
+	-ms-transform: translateX(-50%);
+	-moz-transform: translateX(-50%);
+	-webkit-transform: translateX(-50%);
+	width: 1920px;
+	height: 100%;
+}
+
+.content{
+	width: 1200px;
+	margin: 50px auto 0;
+}
+.content .search_box{
+	width: 1048px;
+	margin: 0 auto;
+}
+.content .search{
+	width: 100%;
+}
+.content .search .left{
+	width: 892px;
+}
+
+.offline{
+	width: 100%;
+	margin-top: 50px;
+}
+.content .tit{
+	width: 100%;
+}
+.content .tit .left{
+	font-family: NotoSansBold;
+	font-size: 16px;
+	color: #f60;
+	margin-right: 60px;
+	padding-bottom: 8px;
+	border-bottom: 1px solid #f60;
+}
+.content .tit .more{
+	font-family: ArialMT;
+	font-size: 12px;
+	color: #333;
+	cursor: pointer;
+}
+.content .tit .more .iconfont{
+	margin-left: 4px;
+	font-size: 12px;
+	color: #ccc;
+}
+.content .tit .more .iconfont{
+	font-size: 10px;
+}
+
+
+.offline .offline_box{
+	width: 100%;
+	margin-top: 10px;
+}
+.offline .offline_list{
+	width: 590px;
+	padding: 10px 20px;
+	border: 1px solid #eee;
+	box-sizing: border-box;
+	margin-bottom: 20px;
+	font-family: NotoSans;
+}
+.offline .offline_list:nth-child(odd){
+	margin-right: 20px;
+}
+.offline .offline_list:hover{
+	border-color: #ff6b12;
+}
+.offline .offline_list .info .left{
+	max-width: 420px;
+	font-size: 14px;
+	color: #242424;
+	overflow: hidden;
+	font-weight: bold;
+}
+.offline .offline_list .info .left a{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.offline .offline_list .border_blue{
+	max-width: 110px;
+	height: 22px;
+	padding: 0 8px;
+	border: 1px solid #ff6b12;
+	border-radius: 6px;
+	font-size: 13px;
+	color: #ff6b12;
+	line-height: 20px;
+	text-align: center;
+	margin-left: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.offline .offline_list .describe{
+	font-size: 12px;
+	color: #666;
+	margin-top: 4px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.offline .offline_list .date{
+	margin: 8px 0 0 -2px;
+	font-size: 12px;
+	color: #999;
+}
+.offline .offline_list .date span{
+	margin-right: 6px;
+}
+
+.pervious{
+	width: 100%;
+	margin-top: 15px;
+}
+.pervious_box{
+	width: 100%;
+	margin: 10px 0 60px;
+	padding: 0 20px;
+	box-sizing: border-box;
+	border: 1px solid  #ddd;
+}
+.table{
+	width: 100%;
+	table-layout: fixed;
+}
+.table th,
+.table td{
+	height: 40px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.table th{
+	text-align: left;
+}
+.table tr{
+	border-bottom: 1px solid #ddd;
+}
+.table tr td:first-child{
+	color: #ff6b12;
+}
+.table tr td:first-child a{
+	height: 40px;
+	line-height: 44px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.table td{
+	padding-right: 20px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	word-break:break-all;
+	word-wrap:break-word;
+}
+.table .tit{
+	width: 360px;
+}
+.table .time{
+	width: 130px;
+}
+.table .venue{
+	width: 260px;
+}
+.table .organizer{
+	width: 260px;
+}
+.table .status{
+	width: 130px;
+}
+
+.paging{
+	margin: 20px 0;
+}
